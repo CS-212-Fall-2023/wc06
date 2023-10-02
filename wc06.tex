@@ -18,10 +18,10 @@
 \qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
 \boxedpoints
 
-% \usepackage{draftwatermark}
-% \SetWatermarkText{Sample Solution}
-% \SetWatermarkScale{3}
-% \printanswers
+\usepackage{draftwatermark}
+\SetWatermarkText{Sample Solution}
+\SetWatermarkScale{3}
+\printanswers
 
 \begin{document}
 \maketitle
@@ -40,6 +40,16 @@
   \end{claim}
 
   \begin{solution}
+    We prove that the claim is true using a proof by contradiction.
+
+    \begin{proof}
+      Assume that the class of context-free languages is closed under complementation.\\
+      Let $L_1$ and $L_2$ be context-free languages.\\
+      Then $L_1'$ and $L_2'$ are context-free languages.\\
+      Then $L_1'\cup L_2'$ is a context-free language.\\
+      Then $(L_1'\cup L_2')'$ is a context-free language.\\
+      Then $L_1\cap L_2$ is a context-free language.\qquad \textcolor{red}{$\bot$}
+    \end{proof}
   \end{solution}
   
 \end{questions}
